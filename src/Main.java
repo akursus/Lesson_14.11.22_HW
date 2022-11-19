@@ -95,6 +95,25 @@ public class Main {
         else if (leftSeatPlace2<=0 && leftStadingPlace2<=0) {
             System.out.println("В вагоне нет свободных мест");
         }
+        //task3.1
+        System.out.println("Задание 3.1");
+        int personAge3 = 25;
+        boolean kinderGarten = personAge3>=2 && personAge3<7;
+        boolean school = personAge3>=7 && personAge3<18;
+        boolean university = personAge3>=18 && personAge3<24;
+        boolean work = personAge3>=24;
+        if (kinderGarten) {
+            System.out.println("Если человеку " +personAge3 +" года (лет), то ему необходимо ходить в детский сад");
+        }
+        else if (school) {
+            System.out.println("Если человеку " +personAge3 +" лет, то ему необходимо ходить в школу");
+        }
+        else if (university) {
+            System.out.println("Если человеку " +personAge3 +" лет (года), то его место в университете");
+        }
+        else if (work) {
+            System.out.println("Если человеку " +personAge3 +" лет (года), то ему пора ходить на работу");
+        }
     }
 
 }
