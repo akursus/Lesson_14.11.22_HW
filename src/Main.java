@@ -73,6 +73,28 @@ public class Main {
         else if (personAge2>=24) {
             System.out.println("Человек окончил университет и ему пора искать первую работу");
         }
+        //task2.3
+        System.out.println("Задание 2.3");
+        int wagonCapacity2 = 102;
+        int seatPlace2 = 60;
+        int stadingPlace2 = wagonCapacity2 - seatPlace2;
+        int seatTicket2 = 60;
+        int stadingTicket2 = 42;
+        int leftSeatPlace2 = seatPlace2 - seatTicket2;
+        int leftStadingPlace2 = stadingPlace2 - stadingTicket2;
+        System.out.println("Куплено " +seatTicket2 +" сидячих мест и " +stadingTicket2 +" стоячих мест");
+        if (leftSeatPlace2>0 && leftStadingPlace2>0) {
+            System.out.println("В вагоне осталось " + leftSeatPlace2 +" сидячих мест и " +leftStadingPlace2 +" стоячих мест");
+        }
+        else if (leftSeatPlace2<=0 && leftStadingPlace2>0) {
+            System.out.println("В вагоне осталось " +leftStadingPlace2 +" стоячих мест");
+        }
+        else if (leftSeatPlace2>0 && leftStadingPlace2<=0) {
+            System.out.println("В вагоне осталось " + leftSeatPlace2 +" сидячих мест");
+        }
+        else if (leftSeatPlace2<=0 && leftStadingPlace2<=0) {
+            System.out.println("В вагоне нет свободных мест");
+        }
     }
 
 }
