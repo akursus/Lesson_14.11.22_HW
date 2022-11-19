@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        //task1
-        System.out.println("Задание 1");
+        //task1.1
+        System.out.println("Задание 1.1");
         int age = 19;
         System.out.println("Возраст = " +age +" лет");
         if (age>=18) {
@@ -10,8 +10,8 @@ public class Main {
         if (age<18) {
             System.out.println("Возраст совершеннолетия ещё не наступил, и Вам нужно немного подождать");
         }
-        //task2
-        System.out.println("Задание 2");
+        //task1.2
+        System.out.println("Задание 1.2");
         int personAge = 23;
         System.out.println("Возраст = " +personAge +" лет");
         if (personAge<7) {
@@ -26,13 +26,13 @@ public class Main {
         if (personAge>=24) {
             System.out.println("Человек окончил университет и ему пора искать первую работу");
         }
-        //task3
-        System.out.println("Задание 3");
+        //task1.3
+        System.out.println("Задание 1.3");
         int wagonCapacity = 102;
         int seatPlace = 60;
         int stadingPlace = wagonCapacity - seatPlace;
         int seatTicket = 50;
-        int stadingTicket = 33;
+        int stadingTicket = 12;
         int leftSeatPlace = seatPlace - seatTicket;
         int leftStadingPlace = stadingPlace - stadingTicket;
         System.out.println("Куплено " +seatTicket +" сидячих мест и " +stadingTicket +" стоячих мест");
@@ -48,5 +48,15 @@ public class Main {
         if (leftSeatPlace<=0 && leftStadingPlace<=0) {
             System.out.println("В вагоне нет свободных мест");
         }
+        //task2.1
+        System.out.println("Задание 2.1");
+        int age2 = 15;
+        System.out.println("Возраст = " +age2 +" лет");
+        if (age2>=18) {
+            System.out.println("Поздравляем Вас с совершеннолетием!");
+        } else {
+            System.out.println("Возраст совершеннолетия ещё не наступил, и Вам нужно немного подождать");
+        }
     }
+
 }
