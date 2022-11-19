@@ -26,5 +26,27 @@ public class Main {
         if (personAge>=24) {
             System.out.println("Человек окончил университет и ему пора искать первую работу");
         }
+        //task3
+        System.out.println("Задание 3");
+        int wagonCapacity = 102;
+        int seatPlace = 60;
+        int stadingPlace = wagonCapacity - seatPlace;
+        int seatTicket = 50;
+        int stadingTicket = 33;
+        int leftSeatPlace = seatPlace - seatTicket;
+        int leftStadingPlace = stadingPlace - stadingTicket;
+        System.out.println("Куплено " +seatTicket +" сидячих мест и " +stadingTicket +" стоячих мест");
+        if (leftSeatPlace>0 && leftStadingPlace>0) {
+            System.out.println("В вагоне осталось " + leftSeatPlace +" сидячих мест и " +leftStadingPlace +" стоячих мест");
+        }
+        if (leftSeatPlace<=0 && leftStadingPlace>0) {
+            System.out.println("В вагоне осталось " +leftStadingPlace +" стоячих мест");
+        }
+        if (leftSeatPlace>0 && leftStadingPlace<=0) {
+            System.out.println("В вагоне осталось " + leftSeatPlace +" сидячих мест");
+        }
+        if (leftSeatPlace<=0 && leftStadingPlace<=0) {
+            System.out.println("В вагоне нет свободных мест");
+        }
     }
 }
