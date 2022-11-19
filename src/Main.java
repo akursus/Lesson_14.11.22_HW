@@ -57,6 +57,22 @@ public class Main {
         } else {
             System.out.println("Возраст совершеннолетия ещё не наступил, и Вам нужно немного подождать");
         }
+        //task2.2
+        System.out.println("Задание 2.2");
+        int personAge2 = 28;
+        System.out.println("Возраст = " +personAge2 +" лет");
+        if (personAge2<7) {
+            System.out.println("Ребёнок ещё мал для школы");
+        }
+        else if (personAge2>=7 && personAge2<18) {
+            System.out.println("Ребёнок ходит в школу");
+        }
+        else if (personAge2>=18 && personAge2<24) {
+            System.out.println("Человек уже закончил школу и может отправляться в университет");
+        }
+        else if (personAge2>=24) {
+            System.out.println("Человек окончил университет и ему пора искать первую работу");
+        }
     }
 
 }
