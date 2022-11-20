@@ -59,7 +59,7 @@ public class Main {
         }
         //task2.2
         System.out.println("Задание 2.2");
-        int personAge2 = 28;
+        int personAge2 = 22;
         System.out.println("Возраст = " +personAge2 +" лет");
         if (personAge2<7) {
             System.out.println("Ребёнок ещё мал для школы");
@@ -70,7 +70,7 @@ public class Main {
         else if (personAge2>=18 && personAge2<24) {
             System.out.println("Человек уже закончил школу и может отправляться в университет");
         }
-        else if (personAge2>=24) {
+        else {
             System.out.println("Человек окончил университет и ему пора искать первую работу");
         }
         //task2.3
@@ -78,8 +78,8 @@ public class Main {
         int wagonCapacity2 = 102;
         int seatPlace2 = 60;
         int stadingPlace2 = wagonCapacity2 - seatPlace2;
-        int seatTicket2 = 60;
-        int stadingTicket2 = 42;
+        int seatTicket2 = 56;
+        int stadingTicket2 = 40;
         int leftSeatPlace2 = seatPlace2 - seatTicket2;
         int leftStadingPlace2 = stadingPlace2 - stadingTicket2;
         System.out.println("Куплено " +seatTicket2 +" сидячих мест и " +stadingTicket2 +" стоячих мест");
@@ -92,16 +92,15 @@ public class Main {
         else if (leftSeatPlace2>0 && leftStadingPlace2<=0) {
             System.out.println("В вагоне осталось " + leftSeatPlace2 +" сидячих мест");
         }
-        else if (leftSeatPlace2<=0 && leftStadingPlace2<=0) {
+        else {
             System.out.println("В вагоне нет свободных мест");
         }
         //task3.1
         System.out.println("Задание 3.1");
-        int personAge3 = 25;
+        int personAge3 = 24;
         boolean kinderGarten = personAge3>=2 && personAge3<7;
         boolean school = personAge3>=7 && personAge3<18;
         boolean university = personAge3>=18 && personAge3<24;
-        boolean work = personAge3>=24;
         if (kinderGarten) {
             System.out.println("Если человеку " +personAge3 +" года (лет), то ему необходимо ходить в детский сад");
         }
@@ -111,27 +110,26 @@ public class Main {
         else if (university) {
             System.out.println("Если человеку " +personAge3 +" лет (года), то его место в университете");
         }
-        else if (work) {
+        else {
             System.out.println("Если человеку " +personAge3 +" лет (года), то ему пора ходить на работу");
         }
         //task3.2
         System.out.println("Задание 3.2");
         int childAge = 13;
-        int adult = 1;
+        int adult = 0;
         boolean attractionNo1 = childAge < 5;
         boolean attractionNo2 = childAge >= 5 && childAge < 14 && adult <= 0;
-        boolean attractionYes1 = childAge >= 5 && childAge < 14 && adult > 0;
-        boolean attractionYes2 = childAge >= 14;
+        boolean attractionYes = childAge >= 5 && childAge < 14 && adult > 0;
         if (attractionNo1) {
             System.out.println("Ребенку " +childAge +" года, поэтому он не может кататься на аттракционе");
         }
         else if (attractionNo2) {
             System.out.println("Ребенку " + childAge + " лет и нет взрослого, поэтому он не может кататься на аттракционе");
         }
-        else if (attractionYes1) {
+        else if (attractionYes) {
             System.out.println("Ребенку " + childAge + " лет и он с взрослым, поэтому он может кататься на аттракционе");
         }
-        else if (attractionYes2) {
+        else {
             System.out.println("Ребенку " + childAge + " лет, поэтому он может кататься на аттракционе без сопровождения взрослого");
         }
         //task3.3
