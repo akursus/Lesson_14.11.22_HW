@@ -136,20 +136,29 @@ public class Main {
         }
         //task3.3
         System.out.println("Задание 3.3");
-        int one = 13;
-        int two = 52;
-        int free = 333;
-        boolean moreOne = one > two && one > free;
-        boolean moreTwo = two > one && two > free;
-        boolean moreFree = free > one && free > two;
-        if (moreOne) {
-            System.out.println(one +" самое большое число");
-        }
-        else if (moreTwo) {
-            System.out.println(two +" самое большое число");
-        }
-        else if (moreFree) {
-            System.out.println(free +" самое большое число");
+        int one = 12;
+        int two = 3;
+        int three = 3;
+        if (one > two) {
+            if (one >= three) {
+                System.out.println(one +" самое большое число");
+            } else {
+                System.out.println(three +" самое большое число");
+            }
+        } else if (two > one) {
+            if (two >= three) {
+                System.out.println(two +" самое большое число");
+            } else {
+                System.out.println(three +" самое большое число");
+            }
+        } else {
+            if (one > three) {
+                System.out.println(one +" самое большое число");
+            } else if (three > one){
+                System.out.println(three +" самое большое число");
+            } else {
+                System.out.println("Все три числа равны");
+            }
         }
     }
 
