@@ -114,6 +114,29 @@ public class Main {
         else if (work) {
             System.out.println("Если человеку " +personAge3 +" лет (года), то ему пора ходить на работу");
         }
+        //task3.2
+        System.out.println("Задание 3.2");
+        int childAge = 13;
+        int adult = 1;
+        boolean attractionNo1 = childAge < 5;
+        boolean attractionNo2 = childAge >= 5 && childAge < 14 && adult <= 0;
+        boolean attractionYes1 = childAge >= 5 && childAge < 14 && adult > 0;
+        boolean attractionYes2 = childAge >= 14;
+        if (attractionNo1) {
+            System.out.println("Ребенку " +childAge +" года, поэтому он не может кататься на аттракционе");
+        }
+        if (attractionNo2) {
+            System.out.println("Ребенку " + childAge + " лет и нет взрослого, поэтому он не может кататься на аттракционе");
+        }
+        if (attractionYes1) {
+            System.out.println("Ребенку " + childAge + " лет и он с взрослым, поэтому он может кататься на аттракционе");
+        }
+        if (attractionYes2) {
+            System.out.println("Ребенку " + childAge + " лет, поэтому он может кататься на аттракционе без сопровождения взрослого");
+        }
+
+
+
     }
 
 }
