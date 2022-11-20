@@ -125,17 +125,15 @@ public class Main {
         if (attractionNo1) {
             System.out.println("Ребенку " +childAge +" года, поэтому он не может кататься на аттракционе");
         }
-        if (attractionNo2) {
+        else if (attractionNo2) {
             System.out.println("Ребенку " + childAge + " лет и нет взрослого, поэтому он не может кататься на аттракционе");
         }
-        if (attractionYes1) {
+        else if (attractionYes1) {
             System.out.println("Ребенку " + childAge + " лет и он с взрослым, поэтому он может кататься на аттракционе");
         }
-        if (attractionYes2) {
+        else if (attractionYes2) {
             System.out.println("Ребенку " + childAge + " лет, поэтому он может кататься на аттракционе без сопровождения взрослого");
         }
-
-
 
     }
 
