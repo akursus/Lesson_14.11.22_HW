@@ -134,7 +134,23 @@ public class Main {
         else if (attractionYes2) {
             System.out.println("Ребенку " + childAge + " лет, поэтому он может кататься на аттракционе без сопровождения взрослого");
         }
-
+        //task3.3
+        System.out.println("Задание 3.3");
+        int one = 13;
+        int two = 52;
+        int free = 333;
+        boolean moreOne = one > two && one > free;
+        boolean moreTwo = two > one && two > free;
+        boolean moreFree = free > one && free > two;
+        if (moreOne) {
+            System.out.println(one +" самое большое число");
+        }
+        else if (moreTwo) {
+            System.out.println(two +" самое большое число");
+        }
+        else if (moreFree) {
+            System.out.println(free +" самое большое число");
+        }
     }
 
 }
